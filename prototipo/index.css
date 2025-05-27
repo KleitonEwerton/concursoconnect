@@ -1,0 +1,57 @@
+:root {
+    --color1: #c4f5ee;
+    --color2: #d3f8f2;
+    --color3: #e2faf7;
+    --color4: #f0fdfb;
+    --color5: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color4);
+}
+
+.active-tab {
+    background-color: var(--color1);
+    color: #333;
+    font-weight: bold;
+    border-bottom: 3px solid #2dd4bf;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.post {
+    transition: transform 0.2s;
+}
+
+.post:hover {
+    transform: translateY(-2px);
+}
+
+.like-button.active {
+    color: #f43f5e;
+}
+
+.bookmark-button.active {
+    color: #3b82f6;
+}
+
+@media (max-width: 640px) {
+    .mobile-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+    }
+
+    .page-content {
+        padding-bottom: 70px;
+    }
+}
