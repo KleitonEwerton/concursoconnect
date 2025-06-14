@@ -1,57 +1,65 @@
-:root {
-    --color1: #c4f5ee;
-    --color2: #d3f8f2;
-    --color3: #e2faf7;
-    --color4: #f0fdfb;
-    --color5: #ffffff;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--color4);
-}
-
-.active-tab {
-    background-color: var(--color1);
-    color: #333;
-    font-weight: bold;
-    border-bottom: 3px solid #2dd4bf;
-}
-
+/* Estilos para abas */
 .tab-content {
     display: none;
 }
-
 .tab-content.active {
     display: block;
 }
 
-.post {
-    transition: transform 0.2s;
+/* Estilo para aba ativa no desktop */
+.tab-button-desktop.active-tab {
+    color: #ffffff;
+    background-color: #0d9488; /* teal-600 */
+}
+.tab-button-desktop:not(.active-tab) {
+    color: #374151; /* gray-700 */
+    background-color: transparent;
+}
+.tab-button-desktop:not(.active-tab):hover {
+    background-color: #f3f4f6; /* gray-100 */
 }
 
-.post:hover {
-    transform: translateY(-2px);
+
+/* Estilo para aba ativa no mobile */
+.tab-button-mobile.active-tab svg,
+.tab-button-mobile.active-tab span {
+    color: #0d9488; /* teal-600 */
+}
+.tab-button-mobile:not(.active-tab) {
+    color: #6b7280; /* gray-500 */
 }
 
-.like-button.active {
-    color: #f43f5e;
+
+/* Estilos para Interações nos Posts */
+.like-button.active svg {
+    fill: #ef4444; /* red-500 */
+    color: #ef4444;
 }
 
+.bookmark-button.active svg {
+    fill: #3b82f6; /* blue-500 */
+    color: #3b82f6;
+}
 .bookmark-button.active {
     color: #3b82f6;
 }
 
-@media (max-width: 640px) {
-    .mobile-nav {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 50;
-    }
+/* Fixa a navegação mobile na parte inferior */
+.mobile-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
 
-    .page-content {
-        padding-bottom: 70px;
+/* Garante que o conteúdo não fique escondido atrás da navegação mobile */
+body {
+    padding-bottom: 80px; /* Ajuste conforme a altura da sua nav mobile */
+}
+
+@media (min-width: 640px) { /* breakpoint 'sm' do Tailwind */
+    body {
+        padding-bottom: 0;
     }
 }
