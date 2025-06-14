@@ -1,21 +1,157 @@
-<div class="space-y-6">
-    <div class="bg-white rounded-xl shadow-sm p-4">
-        <div class="flex items-center space-x-3 mb-4">
-            <div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
-            </div>
-            <div class="flex-grow">
-                <input type="text" placeholder="Compartilhe uma questão ou dica..." class="w-full p-2 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-300">
-            </div>
+<div class="mb-6 bg-white rounded-xl shadow-sm p-4">
+    <div class="flex items-center space-x-3 mb-4">
+        <div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-500" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+            </svg>
         </div>
-        <div class="flex justify-between">
-            <button class="flex items-center space-x-2 text-gray-600 hover:text-teal-500"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" /></svg><span>Imagem</span></button>
-            <button class="flex items-center space-x-2 text-gray-600 hover:text-teal-500"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" /></svg><span>Enquete</span></button>
-            <button class="px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition">Publicar</button>
+        <div class="flex-grow">
+            <input type="text" placeholder="Compartilhe uma questão ou dica..."
+                class="w-full p-2 bg-gray-50 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-300">
+        </div>
+    </div>
+    <div class="flex justify-between">
+        <button class="flex items-center space-x-2 text-gray-600 hover:text-teal-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                    clip-rule="evenodd" />
+            </svg>
+            <span>Imagem</span>
+        </button>
+        <button class="flex items-center space-x-2 text-gray-600 hover:text-teal-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
+                    clip-rule="evenodd" />
+            </svg>
+            <span>Enquete</span>
+        </button>
+        <button class="px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition">Publicar</button>
+    </div>
+</div>
+
+<div class="space-y-6">
+    <div class="post bg-white rounded-xl shadow-sm overflow-hidden">
+        <div class="p-4">
+            <div class="flex items-center space-x-3 mb-3">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800">Ana Silva</h3>
+                    <p class="text-xs text-gray-500">Há 2 horas • Concurso TRF</p>
+                </div>
+            </div>
+            <div class="mb-3">
+                <p class="text-gray-700">Pessoal, alguém sabe resolver essa questão de Direito Administrativo?</p>
+                <div class="mt-3 p-3 bg-gray-50 rounded-lg border border-gray-100">
+                    <p class="text-gray-800 font-medium">Questão 23 - TRF 2022</p>
+                    <p class="text-gray-700 mt-2">Sobre os princípios da Administração Pública, é correto afirmar que:
+                    </p>
+                    <div class="mt-2 space-y-2">
+                        <div class="flex items-start"><span class="font-medium mr-2">A)</span>
+                            <p class="text-gray-700">O princípio da legalidade significa que o administrador público
+                                está sujeito aos mandamentos da lei em toda sua atividade funcional.</p>
+                        </div>
+                        <div class="flex items-start"><span class="font-medium mr-2">B)</span>
+                            <p class="text-gray-700">O princípio da impessoalidade permite tratamento diferenciado em
+                                situações específicas.</p>
+                        </div>
+                        <div class="flex items-start"><span class="font-medium mr-2">C)</span>
+                            <p class="text-gray-700">O princípio da publicidade não se aplica a atos administrativos
+                                internos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between text-gray-500 border-t border-gray-100 pt-3">
+                <button class="like-button flex items-center space-x-1 hover:text-red-500"><svg
+                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg><span>24</span></button>
+                <button class="flex items-center space-x-1 hover:text-blue-500"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg><span>8 comentários</span></button>
+                <button class="bookmark-button flex items-center space-x-1 hover:text-blue-500"><svg
+                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                    </svg><span>Salvar</span></button>
+                <button class="flex items-center space-x-1 hover:text-green-500"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                    </svg><span>Compartilhar</span></button>
+            </div>
         </div>
     </div>
     <div class="post bg-white rounded-xl shadow-sm overflow-hidden">
-        </div>
-    <div class="post bg-white rounded-xl shadow-sm overflow-hidden">
-        </div>
-</div>
+        <div class="p-4">
+            <div class="flex items-center space-x-3 mb-3">
+                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-800">Carlos Mendes</h3>
+                    <p class="text-xs text-gray-500">Há 5 horas • Concursos 2023</p>
+                </div>
+            </div>
+            <div class="mb-3">
+                <p class="text-gray-700">Atenção! Novo concurso anunciado para o Banco Central com 100 vagas! Inscrições
+                    começam em 15/10/2023.</p>
+                <div class="mt-3 bg-teal-50 border border-teal-100 rounded-lg p-3">
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-500 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="font-medium text-teal-700">Informações importantes:</span>
+                    </div>
+                    <ul class="mt-2 space-y-1 text-sm text-teal-700 ml-7">
+                        <li>• Salário inicial: R$ 19.200,00</li>
+                        <li>• Requisito: Nível superior em qualquer área</li>
+                        <li>• Taxa de inscrição: R$ 150,00</li>
+                        <li>• Provas previstas para: 10/12/2023</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-between text-gray-500 border-t border-gray-100 pt-3">
+                <button class="like-button flex items-center space-x-1 hover:text-red-500"><svg
+                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg><span>56</span></button>
+                <button class="flex items-center space-x-1 hover:text-blue-500"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg><span>17 comentários</span></button>
+                <button class="bookmark-button flex items-center space-x-1 hover:text-blue-500"><svg
+                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                    </svg><span>Salvar</span></button>
+                <button class="flex items-center space-x-1 hover:text-green-500"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                    </svg><span>Compartilhar</span></button>
